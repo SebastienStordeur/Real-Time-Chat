@@ -14,6 +14,7 @@ const Auth: React.FC<IAuth> = ({ setIsAuthenticated }) => {
   const signInWithGoogle = () => {
     try {
       signInWithPopup(auth, provider).then((result) => {
+        console.log(result);
         cookies.set("token", result.user.refreshToken);
         setIsAuthenticated(true);
       });
@@ -21,7 +22,6 @@ const Auth: React.FC<IAuth> = ({ setIsAuthenticated }) => {
       console.error(error);
     }
   };
-
   return (
     <div className="auth">
       <h1>Sign In With Google To Start Chatting</h1>

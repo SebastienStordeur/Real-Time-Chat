@@ -48,9 +48,12 @@ main {
   position: relative;
 }
 .display-messages {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 90%;
   background-color: #ffffff;
+  overflow: hidden;
 }
 .display-messages div {
   background-color: #008b8b;
@@ -63,4 +66,20 @@ main {
 }
 .message-form input {
   width: 100%;
+}
+
+.message {
+  max-width: 70%;
+}
+.own {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  margin: 4px 4px 4px 30%;
+  background-color: red;
+  height: 32px;
+  border-radius: 12px;
+}
+.else {
+  background-color: green;
 }
