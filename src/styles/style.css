@@ -24,7 +24,7 @@ main {
   margin-bottom: 12px;
 }
 .button {
-  padding: 12px;
+  padding: 4px 12px;
   font-size: 20px;
   background-color: #008b8b;
   color: #ffffff;
@@ -32,7 +32,35 @@ main {
   letter-spacing: 0.2px;
   cursor: pointer;
   transition: all 1s ease;
+  min-width: 120px;
+  border-radius: 4px;
 }
 .button:hover {
   filter: brightness(130%);
+}
+
+.chatroom {
+  width: 100%;
+  height: 60vh;
+  background-color: #008b8b;
+  padding: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.display-messages {
+  width: 100%;
+  height: 90%;
+  background-color: #ffffff;
+}
+.display-messages div {
+  background-color: #008b8b;
+  color: #ffffff;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+}
+.message-form input {
+  width: 100%;
 }
