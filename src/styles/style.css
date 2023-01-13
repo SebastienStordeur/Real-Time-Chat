@@ -52,8 +52,9 @@ main {
   flex-direction: column;
   width: 100%;
   height: 90%;
-  background-color: #ffffff;
+  background-color: #ece5dd;
   overflow: hidden;
+  border-radius: 8px;
 }
 .display-messages div {
   background-color: #008b8b;
@@ -69,17 +70,24 @@ main {
 }
 
 .message {
+  width: fit-content;
   max-width: 70%;
 }
 .own {
   display: flex;
   align-items: center;
   padding: 0 8px;
-  margin: 4px 4px 4px 30%;
-  background-color: red;
+  margin: 4px 4px 4px auto;
+  background-color: #dcf8c6;
   height: 32px;
   border-radius: 12px;
 }
 .else {
-  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  margin: 4px;
+  height: 32px;
+  border-radius: 12px;
+  background-color: #ffffff;
 }
